@@ -23,7 +23,7 @@ app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
 app.use(express.json());
 app.use(cookieParser());
 
-await mongoose.connect("mongodb+srv://roco:Rolo9900992024@mern-blog-database.cjbux.mongodb.net/?retryWrites=true&w=majority&appName=mern-blog-database");
+await mongoose.connect("mongodb+srv://vercel-admin-user-67ac17997d3a160f83df97e3:5xjBSnqWMJ0saq98@cluster0.gi73q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 
 app.post("/register", async (req, res) => {
     const { username, password } = req.body;
