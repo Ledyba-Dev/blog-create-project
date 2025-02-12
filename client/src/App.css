@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background-color: #dadada;
+}
+main {
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 15px;
+}
+a.active {
+  font-weight: bold;
+  background-color: #c0c0c0;
+}
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  gap: 25px;
+}
+.containerPost {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+div.post {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 20px;
+}
+div.post section.texts h2 {
+  font-size: 1.8rem;
+}
+section.texts p.info {
+  margin: 6px 0;
+  color: #888;
+  font-size: .7rem;
+  font-weight: bold;
+
+  display: flex;
+  gap: 10px;
+}
+section.texts p.info a.author {
+  color: #333;
+}
+section.texts p.summary {
+  margin: 6px 0 0 0;
+  line-height: 1.4rem;
+}
+form.loginForm, form.registerForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+form.loginForm h1, form.registerForm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 8px;
+  border: 0;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.466);
+}
+button {
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 0;
+}
+form.login h1, form.register h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
